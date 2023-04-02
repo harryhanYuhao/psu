@@ -1,0 +1,3 @@
+#!/bin/bash
+
+gcc  -I/home/hhyh/psu/lib/c -std=gnu17 -pedantic -Wall -Wextra -lm $1 
