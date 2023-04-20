@@ -1,3 +1,6 @@
 #!/bin/bash
 
-g++  -I/home/hhyh/psu/lib/gfx/include -I/home/hhyh/psu/lib/gfx/glut/Include -Wall -Wextra -std=c++11 $1 -lGLU -lGL -lGLEW -lglut -lX11
+FLAGS="-I$HOME/psu/lib/gfx/include -I$HOME/psu/lib/gfx/glut/Include -pedantic -Wall -Wextra -std=c++11 -lGLU -lGL -lGLEW -lglut -lX11"
+g++ $1 $FLAGS
+echo g++ $1 $FLAGS
+

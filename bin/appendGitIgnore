@@ -1,0 +1,2 @@
+#/bin/sh 
+echo -e '*.latexmk\n*.aux\n*.log\n*.gz\n*.toc\n*.bbl\n*.bcf\n*.xml\n*.blg\n*.fls\n*.out\n*.o\n*.txt' >> .gitignore

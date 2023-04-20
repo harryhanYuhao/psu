@@ -1,3 +1,7 @@
 #!/bin/bash
 
-gcc  -I/home/hhyh/psu/lib/c -std=gnu17 -pedantic -Wall -Wextra -lm $1 
+FLAG="-I$HOME/psu/lib -std=gnu17 -pedantic -Wall -Wextra -lm -L$HOME/psu/lib -ltEngine -Wl,-rpath=$HOME/psu/lib "
+
+gcc $* $FLAG
+echo gcc $* $FLAG
+
