@@ -4,7 +4,9 @@ RED='\033[0;31m'
 NC='\033[0m'
 time=5
 
+
+# if input is not zero, set time to input
 [ -z $1 ] || time=$1
 
-[ -n $1 ] && echo -e "${RED}journalctl --since \"${time} minute ago\" ${NC}\n" && journalctl --since "${time} minute ago" 
+echo -e "${RED}journalctl --since \"${time} minute ago\" ${NC}\n" && journalctl --since "${time} minute ago" 
 
